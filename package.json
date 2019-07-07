@@ -1,6 +1,6 @@
 {
   "name": "@blendsdk/git",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Common library and utilities to use Git in NodeJS",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
@@ -13,7 +13,7 @@
     "utility"
   ],
   "bin": {
-    "is_git_branch" : "./dist/utils/is_git_branch.js",
+    "is_git_branch": "./dist/utils/is_git_branch.js",
     "is_git_clean": "./dist/utils/is_git_clean.js"
   },
   "license": "MIT",
