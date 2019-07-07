@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { get_current_branch } from "../Git";
 import chalk from "chalk";
 

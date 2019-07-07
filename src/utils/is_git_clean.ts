@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { is_git_clean } from "../Git";
 import chalk from "chalk";
 
