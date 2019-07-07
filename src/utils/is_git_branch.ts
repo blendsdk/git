@@ -1,4 +1,4 @@
-import { get_current_branch } from "./Git";
+import { get_current_branch } from "../Git";
 import chalk from "chalk";
 
 const branch = process.argv[2] || 'master'

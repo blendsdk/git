@@ -12,6 +12,9 @@
     "git",
     "utility"
   ],
+  "bin": {
+    "is_git_branch" : "./dist/utils/is_git_branch.js"
+  },
   "license": "MIT",
   "types": "./dist/index.d.ts",
   "scripts": {

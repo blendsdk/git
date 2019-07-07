@@ -8,6 +8,15 @@ function get_current_folder(): string {
     return process.cwd();
 }
 
+export function is_git_clean(folder?: string): any {
+    const result = shell.exec("git diff-index HEAD --", {
+        silent: true,
+        cwd: folder || get_current_folder()
+    }).toString().trim();
+    console.log(result);
+    return result;
+}
+
 /**
  * Gets the current branch name
  *
