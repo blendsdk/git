@@ -1,6 +1,6 @@
 {
-  "name": "@blendsdk/express",
-  "version": "0.9.1",
+  "name": "@blendsdk/git",
+  "version": "0.9.0",
   "description": "Common library and utilities to use Git in NodeJS",
   "main": "dist/index.js",
   "author": "Gevik Babakhani <gevikb@gmail.com>",
@@ -13,7 +13,8 @@
     "utility"
   ],
   "bin": {
-    "is_git_branch" : "./dist/utils/is_git_branch.js"
+    "is_git_branch" : "./dist/utils/is_git_branch.js",
+    "is_git_clean": "./dist/utils/is_git_clean.js"
   },
   "license": "MIT",
   "types": "./dist/index.d.ts",
@@ -22,7 +23,7 @@
     "watch": "rm -fR ./dist && tsc -w ",
     "fiddle": "node ./dist/fiddle.js",
     "test": "jest --detectOpenHandles",
-    "patch-publish": "node ./dist/is_git_branch master && yarn build && yarn publish --patch --access public && git push origin master --tags"
+    "patch-publish": "node ./dist/utils/is_git_clean && node ./dist/utils/is_git_branch master && yarn build && yarn publish --patch --access public && git push origin master --tags"
   },
   "dependencies": {
     "chalk": "^2.4.2",
